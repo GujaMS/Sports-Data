@@ -1,0 +1,100 @@
+.country-name {
+    padding: 8px;
+    background:#3f4d95; 
+    color:white;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.stage-name {
+    padding: 8px;
+    background:yellow;
+    color:black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.games {
+    background-color: white;
+}
+
+.match {
+    display: grid;
+    border: 1px solid black;
+    padding: 16px;
+    grid-template-columns: 3fr 1fr 3fr;
+    gap: 100px;
+    position: relative;
+}
+
+.add-to-database {
+    position: absolute;
+    background: #3f4d95;
+    color: #fff;
+    border-radius: 20px;
+    border-color: #3f4d95;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#getLiveDataButton {
+    height: 100%;
+    background: #3f4d95;
+    color: #fff;
+    border-color: #3f4d95;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#sportSelectorForm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.team-home,
+.team-away {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.team-away {
+    align-items: flex-start;
+}
+
+.team-away img,
+.team-home img {
+    width: 40px;
+    height: 40px;
+}
+
+.team-away span,
+.team-home span {
+    display: flex;
+    align-items: center;
+}
+
+.score-time {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.no-results {
+    color: red;
+}
+
+@media screen and (max-width:768px) {
+    .match {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .team-away,
+    .team-home {
+        align-items: center;
+    }
+}
